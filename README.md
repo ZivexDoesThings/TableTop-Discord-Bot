@@ -52,8 +52,12 @@ These commands are only accessible by users listed as admins/developers of the b
   - The game commands call the related game function from its file, but the other categories have the full functionality of their commands within the same file.
 - **languages.py**
   - This has not yet been changed from v1.2.2, so still contains all translated strings specifically from that version, but will be updated in the future.
+- **tt_assets.py**
+  - Contains references to various custom emoji and colours for consistency and quick access (i.e. no manual cross-referencing)
 - **games/**
   - Contains individualised files for each game function.
+  - **_handler.py**
+    - Runs the common parts of all games, such as setup. Contains base classes of `Player` and `Game` which are expanded on in the other game files.
 - **storage/**
   - Contains (or will contain when created by the program) files for long term storage, such as statistics and preferences.
   - **words.pkl**
