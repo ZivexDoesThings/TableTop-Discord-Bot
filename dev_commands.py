@@ -10,8 +10,7 @@ def reload_all():
         importlib.reload(module)
 
 dev_guilds = [
-    discord.Object(id=620499156368097290), # Bot Testing
-    discord.Object(id=657394368789086218), # Support Server
+    discord.Object(id=0)
     ]
 
 class DevCommands(commands.Cog):
