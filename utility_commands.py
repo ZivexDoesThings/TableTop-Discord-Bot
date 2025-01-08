@@ -1363,15 +1363,8 @@ class UtilCommands(commands.Cog):
         await ctx.response.send_message(embed=user_menu_embed(), view=UserMenu(ctx), ephemeral=ephemeral)
 
 beta_test_guilds = [
-            discord.Object(id=620499156368097290), # Testing Server
-            discord.Object(id=657394368789086218), # TableTop Support Server
-            discord.Object(id=454129794284519434), # Zivex Zone
-            discord.Object(id=654316563679412274), # Kuba's Very Baller Area
-            discord.Object(id=620479099948761089), # JCTheFluteFam
-            discord.Object(id=577287230125506580), # Kool Beans
-            discord.Object(id=467842457879576596), # TSTA
-            discord.Object(id=875581905741938758) # Ripoff VIP
-            ]
+    discord.Object(id=0)
+]
 
 async def setup(bot:commands.Bot):
     reload_all()
